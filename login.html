@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #000000;
+        }
+
+        .header {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        header {
+            background-color: #a19cef;
+            color: #000000;
+            padding: 20px;
+        }
+
+        header nav ul {
+            list-style: none;
+            text-align: right;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #080808;
+        }
+
+        header button {
+            padding: 9px 12px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: bold;
+            margin: 10px;
+            background-color: #a19cef;
+            color: #000000;
+            text-align: center;
+        }
+
+        .buttons button:hover {
+            background-color: rgb(204, 204, 204);
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        .login-container {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 20px;
+            border-radius: 50px;
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #a19cef;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 4px;
+        }
+
+        /* Style for the button on hover */
+        form button:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create.html">Create</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="login.html"><button>LOGIN</button></a>
+                <a href="signup.html"><button>SIGNUP</button></a>
+            </ul>
+        </nav>
+    </header>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" action="login.php">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <button type="submit" id="loginButton">Login</button>
+        </form>
+        <p>Not yet a member? <a href="signup.html">Sign up</a></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
